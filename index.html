@@ -96,7 +96,7 @@
         /* === Simplified Hero (Full Background) === */
         .hero {
             position: relative;
-            min-height: 85vh;
+            min-height: 80vh;
             display: flex;
             align-items: center;
             background: linear-gradient(to right, #090E1B 30%, rgba(9, 14, 27, 0.4) 55%, transparent 80%),
@@ -138,15 +138,13 @@
         }
 
         @media (max-width: 1024px) {
-
-            .navbar .logo,
-            .navbar .nav-actions {
+            .navbar {
                 display: none !important;
             }
 
             .hero {
                 min-height: auto;
-                padding-top: 50px; /* More room at the top */
+                padding-top: 0;
                 padding-bottom: 60px;
                 display: flex;
                 flex-direction: column;
@@ -164,11 +162,9 @@
             .mobile-hero-img {
                 display: block !important;
                 width: 140%;
-                /* Slightly larger photo */
                 max-width: none;
-                margin-top: -20px;
+                margin-top: 0;
                 margin-bottom: -480px;
-                /* Extreme overlap */
                 z-index: 1;
                 pointer-events: none;
             }
